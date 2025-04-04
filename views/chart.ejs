@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart Page</title>
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+    <!-- DataTables JavaScript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- icon link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- DataTables JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+    <!-- Include Choices.js library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@10.0.5/public/assets/styles/choices.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@10.0.5"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+
+    <link rel="stylesheet" href="../src/css/chart.css">
+</head>
+
+<body>
+    <br>
+    <button id="logoutButton">Logout</button>
+
+    <button id="projectsButton">Projects</button>
+    <button id="exportExcelButton">Export to Excel</button>
+
+    <!-- Inside your chart.ejs template -->
+    <h1>Project Todos</h1>
+
+    <table class="container-fluid mt-5" border="1" id="todosTable">
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>PM Name</th>
+                <th>Todo Group</th>
+                <th>Content</th>
+                <th>Assignees</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Status</th>
+                <th>Action</th>
+                <th>Action</th>
+                <th>Docs & Files</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% todos.forEach(todo=> { %>
+                <tr>
+                    <td>
+                        <%= todo.bucket.name %>
+                    </td>
+                    <td>
+                        <%= todo.creator.name %>
+                    </td>
+                    <td>
+                        <%= todo.parent.title %>
+                            <% const todolistName=todo.parent.title; %>
+                                <% if (todolistCompletionCounts[todolistName]) { %>
+                                    <% const statusCount=todolistCompletionCounts[todolistName].status; %>
+                                        <% const [completedCount, totalCount]=statusCount.split('/'); %>
+                                            <% const completionPercentage=(completedCount / totalCount) * 100; %>
+
+                                                <% if (completionPercentage===100) { %>
+                                                    <span style="color: green;">
+                                                        <%= statusCount %>
+                                                    </span>
+                                                    <% } else if (completionPercentage> 0) { %>
+                                                        <span style="color: orange;">
+                                                            <%= statusCount %>
+                                                        </span>
+                                                        <% } else { %>
+                                                            <span style="color: red;">
+                                                                <%= statusCount %>
+                                                            </span>
+                                                            <% } %>
+                                                                <% } %>
+
+                    </td>
+                    <td>
+                        <%= todo.content %>
+                    </td>
+                    <td>
+                        <% if (todo.assignees && todo.assignees.length> 0) { %>
+                            <%= todo.assignees.map(assignee=> assignee.name).join(', ') %>
+                                <% } else { %>
+                                    N/A
+                                    <% } %>
+                    </td>
+
+                    <td>
+                        <%= todo.starts_on %>
+                    </td>
+                    <td>
+                        <%= todo.due_on %>
+                    </td>
+                    <td>
+                        <% if (todo.completed) { %>
+                            <span style="color: green;">Completed</span>
+                            <% } else { %>
+                                <span style="color: red;">Pending</span>
+                                <% } %>
+
+                    </td>
+                    <td><button class="btn btn-primary edit-btn" data-toggle="modal" data-target="#editModal"
+                            data-todo-id="<%= todo.id %>" data-project-id="<%= todo.bucket.id %>"
+                            data-project="<%= todo.bucket.name %>" data-todo-group="<%= todo.parent.title %>"
+                            data-todo="<%= todo.content %>" data-assigned="
+                <% if (Array.isArray(todo.assignees)) { %>
+                    <%= todo.assignees.map(function(item) { return item.id + ':' + item.name; }).join(', '); %>
+                <% } else { %>
+                    Error: todo assigned is not an array.
+                <% } %>" data-assignees="
+                <% if (Array.isArray(todo.assignees)) { %>
+                    <%= todo.assignees.map(function(item) { return item.id; }).join(', '); %>
+                <% } else { %>
+                    Error: todo assignees is not an array.
+                <% } %>" data-assignees="<%= todo.assignees?.[0]?.id %>" data-start-date="<%= todo.starts_on %>"
+                            data-end-date="<%= todo.due_on %>" data-due-date="<%= todo.due_on %>"
+                            data-no-date="<%= todo.no_date %>"
+                            data-status="<%= todo.completed ? 'Completed' : 'Pending' %>">Update</button>
+
+                    </td>
+                    <td>
+                        <button class="btn btn-danger delete-btn" data-project-id="<%= todo.bucket.id %>"
+                            data-todo-id="<%= todo.id %>">Delete</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-warning show-files-btn" onclick="openModal('exampleModal<%= todo.bucket.id %>')">Files</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal<%= todo.bucket.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document"> <!-- Adjust the size of the modal using modal-lg for large -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Files for <%= todo.bucket.name %></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table"> <!-- Remove inline width style -->
+                    <thead>
+                        <tr>
+                            <th>Folder</th>
+                            <th>File</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% const filteredFolders = folders.filter(folder => folder.bucket.name === todo.bucket.name);
+                        if (filteredFolders.length > 0) { %>
+                            <% filteredFolders.forEach(folder => { %>
+                                <% renderFolders(folder.children, folder.title); %>
+                            <% }); %>
+                        <% } else { %>
+                            <tr>
+                                <td colspan="3">No folders available.</td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<% function renderFolders(folders, parentFolderName) { %>
+    <% folders.forEach(childFolder => { %>
+        <tr>
+            <td><%= parentFolderName %> - <%= childFolder.title %></td>
+            <% if (childFolder.files && childFolder.files.length > 0) { %>
+                <td>
+                    <ul style="list-style-type: disc; padding-left: 20px;"> <!-- Use disc for filled bullet points -->
+                        <% childFolder.files.forEach(file => { %>
+                            <li style="margin-bottom: 7px;"><%= file.title %></li>
+                        <% }); %>
+                    </ul>
+                </td>
+                
+                
+                <td>
+                    <% childFolder.files.forEach(file => { %>
+                        <div class="button-container">
+                            <a href="<%= file.previewUrl %>" class="btn btn-info" target="_blank" style="margin-bottom: 5px; display: block;">
+                                <i class="bi bi-eye-fill" style="margin-right: 5px;"></i> 
+                              
+                            </a>
+                            <a href="" class="btn btn-success download-btn" data-file-title="<%= file.title %>" data-file-url="<%= file.publicDownloadUrl %>" style="margin-bottom: 5px; display: block;">
+                                <i class="bi bi-file-earmark-arrow-down-fill" style="margin-right: 5px;"></i>
+                               
+                            </a>
+                        </div>
+                    <% }); %>
+                    
+                </td>
+            <% } else { %>
+                <td colspan="2">No files available.</td>
+            <% } %>
+        </tr>
+         
+        <% if (childFolder.children && childFolder.children.length > 0) { %>
+            <% renderFolders(childFolder.children, parentFolderName + ' - ' + childFolder.title); %>
+        <% } %>
+    <% }); %>
+<% } %>
+<div class="modal fade" id="downloadModal" tabindex="-1" role="dialog" aria-labelledby="downloadModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="downloadModalLabel">Download File</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Please login with your Basecamp credentials to download the file. If Basecamp is already logged in using the same browser, the file will be downloaded directly. </p>
+            </div>
+            <div class="modal-footer">
+                <a id="downloadLink" href="#" class="btn btn-primary" download>Download</a>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+
+                    </td>
+
+
+                </tr>
+                <% }); %>
+        </tbody>
+    </table>
+
+    <!-- Add this modal structure at the end of the body -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit Task</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="editForm">
+                        <label for="editProject">Project Name:</label>
+                        <input type="text" id="editProject" class="form-control" readonly>
+
+                        <label for="editTodoGroup">Todo Group:</label>
+                        <input type="text" id="editTodoGroup" class="form-control" readonly>
+
+                        <label for="editTodo">Todo:</label>
+                        <input type="text" id="editTodo" class="form-control">
+
+                        <label for="editAssigned">Assigned:</label>
+                        <select id="editAssignedDrop" multiple></select>
+
+                        <!-- Dropdown container -->
+                        <div class="dropdown-container">
+                            <label for="due-date">Due on:</label>
+
+                            <select id="due-date" class="form-control">
+                                <option value="select date">select a date</option>
+                                <option value="no-due-date">No due date</option>
+                                <option value="specific-day">Due date</option>
+                                <option value="date-range">Start to end</option>
+                            </select>
+                            <div id="nodueDate-day-picker" style="display: none;">
+                                <label for="nodueDate">No Due Date:</label>
+                                <input type="date" id="nodueDate" class="form-control">
+                            </div>
+                            <!-- Date picker for specific-day option -->
+                            <div id="specific-day-picker" style="display: none;">
+                                <label for="editDueDate">Due Date:</label>
+                                <input type="date" id="editDueDate" class="form-control">
+                            </div>
+
+                            <!-- Date range picker for date-range option -->
+                            <div id="date-range-picker" style="display: none;">
+                                <div id="start-end">
+                                    <label for="editStart-date">Start date:</label>
+                                    <input type="date" class="form-control" id="editStart-date">
+                                    <label for="editEndDate">End date:</label>
+                                    <input type="date" class="form-control" id="editEndDate">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 
+                        <label for="editStatus">Status:</label>
+                        <input type="text" id="editStatus" class="form-control" readonly> -->
+                        <label for="editStatus">Status:</label>
+                        <select id="editStatus" class="form-control">
+                            <option value="completed">Completed</option>
+                            <option value="pending">Pending</option>
+                        </select>
+
+                        <button type="button" class="btn btn-primary mt-3" id="saveChangesBtn">Save Changes</button>
+                        <div id="loading-indicator" style="display: none;">
+                            <div class="spinner-border"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="../src/javascript/chart.js"></script>
+<script>
+    $(document).ready(function () {
+        var table;
+        $('#exportExcelButton').on('click', function () {
+            exportTableToExcel();
+        });
+
+        function exportTableToExcel() {
+            // Check if DataTable is initialized and has data
+            if (table && table.rows().count() > 0) {
+                var allData = [];
+
+                // Extract column headings
+                var columnHeadings = [];
+                $(table.table().header()).find('th').each(function () {
+                    columnHeadings.push($(this).text().trim());
+                });
+                allData.push(columnHeadings);
+
+                // Extract data from each row
+                table.rows().every(function () {
+                    var rowData = [];
+                    $(this.node()).find('td').each(function () {
+                        rowData.push($(this).text().trim());
+                    });
+                    allData.push(rowData);
+                });
+
+                // Modify the data to convert 6/7 format
+                allData.forEach(function (row) {
+                    // Modify the necessary columns (assuming the columns to modify are index 4 and 5)
+                    if (row.length >= 6) { // Ensure the row has enough columns
+                        var numerator = parseInt(row[4]);
+                        var denominator = parseInt(row[5]);
+                        if (!isNaN(numerator) && !isNaN(denominator) && denominator !== 0) {
+                            row[6] = numerator + '/' + denominator;
+                        }
+                    }
+                });
+
+                var wb = XLSX.utils.book_new();
+                wb.SheetNames.push('Data');
+                var ws = XLSX.utils.aoa_to_sheet(allData);
+                wb.Sheets['Data'] = ws;
+
+                var wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'binary' });
+
+                function s2ab(s) {
+                    var buf = new ArrayBuffer(s.length);
+                    var view = new Uint8Array(buf);
+                    for (var i = 0; i < s.length; i++) view[i] = s.charCodeAt(i) & 0xFF;
+                    return buf;
+                }
+
+                saveAs(new Blob([s2ab(wbout)], { type: "application/octet-stream" }), 'todos.xlsx');
+            } else {
+                console.error("DataTable is not initialized or has no data.");
+            }
+        }
+
+        // Initialize DataTable only if it's not initialized already
+        if (!$.fn.DataTable.isDataTable('#todosTable')) {
+            table = $('#todosTable').DataTable({
+                // Your DataTable configurations
+                "paging": true
+            });
+        } else {
+            table = $('#todosTable').DataTable();
+        }
+    });
+    document.querySelectorAll('.download-btn').forEach(btn => {
+        btn.addEventListener('click', function(event) {
+            event.preventDefault();
+            const fileTitle = this.dataset.fileTitle;
+            const fileUrl = this.dataset.fileUrl;
+            const downloadLink = document.getElementById('downloadLink');
+            downloadLink.textContent = 'Download';
+            downloadLink.href = fileUrl;
+            $('#downloadModal').modal('show');
+        });
+    });
+    function openModal(modalId) {
+        $('#' + modalId).modal('show');
+    }
+
+</script>
+
+</html>

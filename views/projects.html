@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+
+    <!-- DataTables Select CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.3.3/css/select.dataTables.min.css">
+    <link rel="stylesheet" href="../src/css/projects.css">
+    <!-- popup modal -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script>
+    <script
+        src="https://gyrocode.github.io/jquery-datatables-checkboxes/1.2.12/js/dataTables.checkboxes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/exceljs/dist/exceljs.min.js"></script>
+    <!-- Include DataTables 2.0 or newer -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.0.0/css/jquery.dataTables.min.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/2.0.0/js/jquery.dataTables.min.js"></script>
+
+<!-- Include FixedColumns -->
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/fixedcolumns/3.3.0/js/dataTables.fixedColumns.min.js"></script>
+
+
+    <div id="tableLoader" class="loader" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+    
+    <button id="logoutButton">Logout</button>
+
+    <h1>Project List</h1>
+    <button id="actionButton" style="display: none;" onclick="openChart()">Open Todo</button>
+
+    <!-- Container to hold both buttons -->
+    <div id="buttonContainer">
+        <button id="exportExcelButton">Export Excel</button>
+        <button id="activitylog" onclick="openLogs()">Activity Log</button>
+    </div>
+
+    <table class="container-fluid mt-5" border="1" id="dataTable">
+        
+        <thead>
+           <tr>
+            <th><input type="text" placeholder="Search"></th>
+            <th><input type="text" placeholder="Search"></th>
+            <th><input type="text" placeholder="Search"></th>
+            <th><input type="text" placeholder="Search"></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th><input type="text" placeholder="Search"></th>
+            <th><input type="text" placeholder="Search"></th>
+            <th></th>
+        </tr>
+            <tr>
+                <th></th>
+                <th hidden>id</th>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>PM Name</th>
+                <th>Critical</th>
+                <th>Pre-Requisites</th>
+                <th>Installation</th>
+                <th>Handover & Commissioning</th>
+                <th>Handover date</th>
+                <th>Hardware installation date</th>
+                <th>Update</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+    <!-- edit task -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
+        aria-hidden="true">76
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit Project</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="editForm">
+                        <label for="editProject">Project Name:</label>
+                        <input type="text" id="editProject" class="form-control" readonly>
+
+                        <label for="editdesc">Description:</label>
+                        <input type="text" id="editdesc" class="form-control" readonly>
+
+                        <label for="editpmName">PM Name:</label>
+                        <input type="text" id="editpmName" class="form-control" readonly>
+
+                        <div class="modal-body">
+                            <div class="tree">
+                                <ul>
+                                    <li>
+                                        <span class="caret">Todo Group and Content:</span>
+                                        <ul id="todo-content-tree" class="nested">
+                                            <!-- Todo titles and content will be dynamically added here -->
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <label for="edit-date">Handover date</label>
+                        <input type="date" id="edit-date" class="form-control">
+
+
+                        <input type="text" id="edit-todo-content" class="form-control" hidden>
+
+
+                        <button type="button" class="btn btn-primary mt-3" id="saveChangesBtn">Save Changes</button>
+                        <div id="loading-indicator" style="display: none;">
+                            <div class="spinner-border"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="../src/javascript/projects.js"></script>
+<script>
+
+</script>
+
+</html>

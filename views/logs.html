@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logs</title>
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+  <!-- Bootstrap CSS (if you're using Bootstrap) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../src/css/logs.css">
+</head>
+<body>
+  
+   <div>     <button id="exportExcelButtonlog">Export to Excel</button>  <h1>Log Activity</h1> <button id="logoutButton">Logout</button></div>
+    <div id="logContainer">
+    <div class="container mb-3">
+      <select id="logFilterDropdown" class="form-control">
+        <option value="">Select Filter</option>
+        <option value="today">Today</option>
+        <option value="yesterday">Yesterday</option>
+        <option value="oneweek">One Week</option>
+        <option value="onemonth">One Month</option>
+        <option value="checked_off_hardware">Hardware Installation</option>
+      </select>
+    </div>
+  </div>
+    
+    <table id="logsTable" class="container-fluid mt-5" border="1"> 
+      <thead>
+        <tr>
+          <th><input type="text" placeholder="Search"></th>
+          <th><input type="text" placeholder="Search"></th>
+          <th><input type="text" placeholder="Search"></th>
+          <th><input type="text" placeholder="Search"></th>
+          <th><input type="text" placeholder="Search"></th>
+          <th><input type="text" placeholder="Search"></th>
+          <th><input type="text" placeholder="Search"></th>
+        </tr>
+        <tr>
+          <th>Project Name</th>
+          <th>PM</th>
+          <th>Date & Time</th>
+          <th>Activity</th>
+          <th>Todo Header</th>
+          <th>ToDos List Header</th>
+          <th>Todo List Items / Comment</th>
+        </tr>
+      </thead>
+     <tbody></tbody>
+    </table>
+  
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <!-- Bootstrap JS (if you're using Bootstrap) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- SheetJS Library for Exporting Excel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <!-- Moment.js for Date Parsing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/exceljs/dist/exceljs.min.js"></script>
+
+
+
+    <script src="../src/javascript/logs.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

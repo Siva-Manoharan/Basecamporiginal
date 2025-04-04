@@ -1,0 +1,922 @@
+[
+    {
+        "id": 36148532,
+        "status": "active",
+        "created_at": "2024-02-02T12:12:49.024Z",
+        "updated_at": "2024-02-05T07:14:01.251Z",
+        "name": "W/003/Test Project Mouli",
+        "description": "Test Project",
+        "purpose": "topic",
+        "clients_enabled": false,
+        "last_needle_color": "green",
+        "last_needle_position": null,
+        "previous_needle_position": null,
+        "bookmark_url": "https://3.basecamp.com/5740649/my/bookmarks/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxuYVdRNkx5OWlZek12UW5WamEyVjBMek0yTVRRNE5UTXlQMlY0Y0dseVpYTmZhVzRHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6InJlYWRhYmxlIn19--bb41ed992059944ccb0bf38477dccc02a181202a.json",
+        "url": "https://3.basecamp.com/5740649/projects/36148532.json",
+        "app_url": "https://3.basecamp.com/5740649/projects/36148532",
+        "dock": [
+            {
+                "id": 7029814990,
+                "title": "Message Board",
+                "name": "message_board",
+                "enabled": true,
+                "position": 1,
+                "url": "https://3.basecamp.com/5740649/buckets/36148532/message_boards/7029814990.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36148532/message_boards/7029814990"
+            },
+            {
+                "id": 7029814998,
+                "title": "To-dos",
+                "name": "todoset",
+                "enabled": true,
+                "position": 2,
+                "url": "https://3.basecamp.com/5740649/buckets/36148532/todosets/7029814998.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36148532/todosets/7029814998"
+            },
+            {
+                "id": 7029815001,
+                "title": "Docs \u0026 Files",
+                "name": "vault",
+                "enabled": true,
+                "position": 3,
+                "url": "https://3.basecamp.com/5740649/buckets/36148532/vaults/7029815001.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36148532/vaults/7029815001"
+            },
+            {
+                "id": 7029815005,
+                "title": "Chat",
+                "name": "chat",
+                "enabled": true,
+                "position": 4,
+                "url": "https://3.basecamp.com/5740649/buckets/36148532/chats/7029815005.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36148532/chats/7029815005"
+            },
+            {
+                "id": 7029815009,
+                "title": "Schedule",
+                "name": "schedule",
+                "enabled": true,
+                "position": 5,
+                "url": "https://3.basecamp.com/5740649/buckets/36148532/schedules/7029815009.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36148532/schedules/7029815009"
+            },
+            {
+                "id": 7029815011,
+                "title": "Automatic Check-ins",
+                "name": "questionnaire",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/36148532/questionnaires/7029815011.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36148532/questionnaires/7029815011"
+            },
+            {
+                "id": 7029815017,
+                "title": "Email Forwards",
+                "name": "inbox",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/36148532/inboxes/7029815017.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36148532/inboxes/7029815017"
+            },
+            {
+                "id": 7029815019,
+                "title": "Card Table",
+                "name": "kanban_board",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/36148532/card_tables/7029815019.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36148532/card_tables/7029815019"
+            }
+        ],
+        "archived": false,
+        "trashed": false,
+        "playgrounded": false,
+        "edit_tools_app_url": "https://3.basecamp.com/5740649/buckets/36148532/dock/edit",
+        "active_status_app_url": "https://3.basecamp.com/5740649/projects/36148532/status/active",
+        "trashed_status_app_url": "https://3.basecamp.com/5740649/projects/36148532/status/trashed",
+        "people": {
+            "team": {
+                "count": 2,
+                "sample": [
+                    {
+                        "id": 45413574,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBMb0tAI=--00ab70163f0d1aa37610cc67c4f23b874a374349/avatar?v=1"
+                    },
+                    {
+                        "id": 45319345,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBLGEswI=--9fd23ab5b6f951f153ddfe5ac0fd68e323554842/avatar?v=1"
+                    }
+                ]
+            }
+        },
+        "bookmarked": false,
+        "subscribed": true
+    },
+    {
+        "id": 36090373,
+        "status": "active",
+        "created_at": "2024-01-30T10:49:53.942Z",
+        "updated_at": "2024-01-30T12:23:04.806Z",
+        "name": "003/Muthulakshmi",
+        "description": "sample",
+        "purpose": "topic",
+        "clients_enabled": false,
+        "last_needle_color": "green",
+        "last_needle_position": null,
+        "previous_needle_position": null,
+        "bookmark_url": "https://3.basecamp.com/5740649/my/bookmarks/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxuYVdRNkx5OWlZek12UW5WamEyVjBMek0yTURrd016Y3pQMlY0Y0dseVpYTmZhVzRHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6InJlYWRhYmxlIn19--aeb4d890d5632f70cb10759860b596997adf01e1.json",
+        "url": "https://3.basecamp.com/5740649/projects/36090373.json",
+        "app_url": "https://3.basecamp.com/5740649/projects/36090373",
+        "dock": [
+            {
+                "id": 7008776500,
+                "title": "Message Board",
+                "name": "message_board",
+                "enabled": true,
+                "position": 1,
+                "url": "https://3.basecamp.com/5740649/buckets/36090373/message_boards/7008776500.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36090373/message_boards/7008776500"
+            },
+            {
+                "id": 7008776504,
+                "title": "To-dos",
+                "name": "todoset",
+                "enabled": true,
+                "position": 2,
+                "url": "https://3.basecamp.com/5740649/buckets/36090373/todosets/7008776504.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36090373/todosets/7008776504"
+            },
+            {
+                "id": 7008776505,
+                "title": "Docs \u0026 Files",
+                "name": "vault",
+                "enabled": true,
+                "position": 3,
+                "url": "https://3.basecamp.com/5740649/buckets/36090373/vaults/7008776505.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36090373/vaults/7008776505"
+            },
+            {
+                "id": 7008776506,
+                "title": "Chat",
+                "name": "chat",
+                "enabled": true,
+                "position": 4,
+                "url": "https://3.basecamp.com/5740649/buckets/36090373/chats/7008776506.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36090373/chats/7008776506"
+            },
+            {
+                "id": 7008776511,
+                "title": "Schedule",
+                "name": "schedule",
+                "enabled": true,
+                "position": 5,
+                "url": "https://3.basecamp.com/5740649/buckets/36090373/schedules/7008776511.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36090373/schedules/7008776511"
+            },
+            {
+                "id": 7008776513,
+                "title": "Automatic Check-ins",
+                "name": "questionnaire",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/36090373/questionnaires/7008776513.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36090373/questionnaires/7008776513"
+            },
+            {
+                "id": 7008776514,
+                "title": "Email Forwards",
+                "name": "inbox",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/36090373/inboxes/7008776514.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36090373/inboxes/7008776514"
+            },
+            {
+                "id": 7008776516,
+                "title": "Card Table",
+                "name": "kanban_board",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/36090373/card_tables/7008776516.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/36090373/card_tables/7008776516"
+            }
+        ],
+        "archived": false,
+        "trashed": false,
+        "playgrounded": false,
+        "edit_tools_app_url": "https://3.basecamp.com/5740649/buckets/36090373/dock/edit",
+        "active_status_app_url": "https://3.basecamp.com/5740649/projects/36090373/status/active",
+        "trashed_status_app_url": "https://3.basecamp.com/5740649/projects/36090373/status/trashed",
+        "people": {
+            "team": {
+                "count": 1,
+                "sample": [
+                    {
+                        "id": 45319345,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBLGEswI=--9fd23ab5b6f951f153ddfe5ac0fd68e323554842/avatar?v=1"
+                    }
+                ]
+            }
+        },
+        "bookmarked": true,
+        "subscribed": true
+    },
+    {
+        "id": 35969258,
+        "status": "active",
+        "created_at": "2024-01-22T09:50:39.100Z",
+        "updated_at": "2024-02-02T08:06:43.910Z",
+        "name": "005/Harish",
+        "description": "test",
+        "purpose": "topic",
+        "clients_enabled": false,
+        "last_needle_color": "green",
+        "last_needle_position": null,
+        "previous_needle_position": null,
+        "bookmark_url": "https://3.basecamp.com/5740649/my/bookmarks/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxuYVdRNkx5OWlZek12UW5WamEyVjBMek0xT1RZNU1qVTRQMlY0Y0dseVpYTmZhVzRHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6InJlYWRhYmxlIn19--2ac6b98198951fc1c9c68002f1cbd114f4a76097.json",
+        "url": "https://3.basecamp.com/5740649/projects/35969258.json",
+        "app_url": "https://3.basecamp.com/5740649/projects/35969258",
+        "dock": [
+            {
+                "id": 6960094231,
+                "title": "Message Board",
+                "name": "message_board",
+                "enabled": true,
+                "position": 1,
+                "url": "https://3.basecamp.com/5740649/buckets/35969258/message_boards/6960094231.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35969258/message_boards/6960094231"
+            },
+            {
+                "id": 6960094234,
+                "title": "To-dos",
+                "name": "todoset",
+                "enabled": true,
+                "position": 2,
+                "url": "https://3.basecamp.com/5740649/buckets/35969258/todosets/6960094234.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35969258/todosets/6960094234"
+            },
+            {
+                "id": 6960094235,
+                "title": "Docs \u0026 Files",
+                "name": "vault",
+                "enabled": true,
+                "position": 3,
+                "url": "https://3.basecamp.com/5740649/buckets/35969258/vaults/6960094235.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35969258/vaults/6960094235"
+            },
+            {
+                "id": 6960094236,
+                "title": "Chat",
+                "name": "chat",
+                "enabled": true,
+                "position": 4,
+                "url": "https://3.basecamp.com/5740649/buckets/35969258/chats/6960094236.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35969258/chats/6960094236"
+            },
+            {
+                "id": 6960094239,
+                "title": "Schedule",
+                "name": "schedule",
+                "enabled": true,
+                "position": 5,
+                "url": "https://3.basecamp.com/5740649/buckets/35969258/schedules/6960094239.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35969258/schedules/6960094239"
+            },
+            {
+                "id": 6960094240,
+                "title": "Automatic Check-ins",
+                "name": "questionnaire",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35969258/questionnaires/6960094240.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35969258/questionnaires/6960094240"
+            },
+            {
+                "id": 6960094241,
+                "title": "Email Forwards",
+                "name": "inbox",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35969258/inboxes/6960094241.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35969258/inboxes/6960094241"
+            },
+            {
+                "id": 6960094243,
+                "title": "Card Table",
+                "name": "kanban_board",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35969258/card_tables/6960094243.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35969258/card_tables/6960094243"
+            }
+        ],
+        "archived": false,
+        "trashed": false,
+        "playgrounded": false,
+        "edit_tools_app_url": "https://3.basecamp.com/5740649/buckets/35969258/dock/edit",
+        "active_status_app_url": "https://3.basecamp.com/5740649/projects/35969258/status/active",
+        "trashed_status_app_url": "https://3.basecamp.com/5740649/projects/35969258/status/trashed",
+        "people": {
+            "team": {
+                "count": 2,
+                "sample": [
+                    {
+                        "id": 45319358,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBL6EswI=--1b38c7ef1698f4059c6b2e4e02591f885df63ba2/avatar?v=1"
+                    },
+                    {
+                        "id": 45319345,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBLGEswI=--9fd23ab5b6f951f153ddfe5ac0fd68e323554842/avatar?v=1"
+                    }
+                ]
+            }
+        },
+        "bookmarked": true,
+        "subscribed": true
+    },
+    {
+        "id": 35943721,
+        "status": "active",
+        "created_at": "2024-01-19T07:17:20.044Z",
+        "updated_at": "2024-02-06T06:57:24.767Z",
+        "name": "001/Mouli",
+        "description": "plans",
+        "purpose": "topic",
+        "clients_enabled": false,
+        "last_needle_color": "green",
+        "last_needle_position": null,
+        "previous_needle_position": null,
+        "bookmark_url": "https://3.basecamp.com/5740649/my/bookmarks/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxuYVdRNkx5OWlZek12UW5WamEyVjBMek0xT1RRek56SXhQMlY0Y0dseVpYTmZhVzRHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6InJlYWRhYmxlIn19--b4f1828bb8cfad679b769b2d07652a25d9e558fb.json",
+        "url": "https://3.basecamp.com/5740649/projects/35943721.json",
+        "app_url": "https://3.basecamp.com/5740649/projects/35943721",
+        "dock": [
+            {
+                "id": 6953978787,
+                "title": "Message Board",
+                "name": "message_board",
+                "enabled": true,
+                "position": 1,
+                "url": "https://3.basecamp.com/5740649/buckets/35943721/message_boards/6953978787.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943721/message_boards/6953978787"
+            },
+            {
+                "id": 6953978793,
+                "title": "To-dos",
+                "name": "todoset",
+                "enabled": true,
+                "position": 2,
+                "url": "https://3.basecamp.com/5740649/buckets/35943721/todosets/6953978793.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943721/todosets/6953978793"
+            },
+            {
+                "id": 6953978798,
+                "title": "Docs \u0026 Files",
+                "name": "vault",
+                "enabled": true,
+                "position": 3,
+                "url": "https://3.basecamp.com/5740649/buckets/35943721/vaults/6953978798.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943721/vaults/6953978798"
+            },
+            {
+                "id": 6953978800,
+                "title": "Chat",
+                "name": "chat",
+                "enabled": true,
+                "position": 4,
+                "url": "https://3.basecamp.com/5740649/buckets/35943721/chats/6953978800.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943721/chats/6953978800"
+            },
+            {
+                "id": 6953978802,
+                "title": "Schedule",
+                "name": "schedule",
+                "enabled": true,
+                "position": 5,
+                "url": "https://3.basecamp.com/5740649/buckets/35943721/schedules/6953978802.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943721/schedules/6953978802"
+            },
+            {
+                "id": 6953978804,
+                "title": "Automatic Check-ins",
+                "name": "questionnaire",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35943721/questionnaires/6953978804.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943721/questionnaires/6953978804"
+            },
+            {
+                "id": 6953978806,
+                "title": "Email Forwards",
+                "name": "inbox",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35943721/inboxes/6953978806.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943721/inboxes/6953978806"
+            },
+            {
+                "id": 6953978807,
+                "title": "Card Table",
+                "name": "kanban_board",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35943721/card_tables/6953978807.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943721/card_tables/6953978807"
+            }
+        ],
+        "archived": false,
+        "trashed": false,
+        "playgrounded": false,
+        "edit_tools_app_url": "https://3.basecamp.com/5740649/buckets/35943721/dock/edit",
+        "active_status_app_url": "https://3.basecamp.com/5740649/projects/35943721/status/active",
+        "trashed_status_app_url": "https://3.basecamp.com/5740649/projects/35943721/status/trashed",
+        "people": {
+            "team": {
+                "count": 2,
+                "sample": [
+                    {
+                        "id": 45319358,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBL6EswI=--1b38c7ef1698f4059c6b2e4e02591f885df63ba2/avatar?v=1"
+                    },
+                    {
+                        "id": 45319345,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBLGEswI=--9fd23ab5b6f951f153ddfe5ac0fd68e323554842/avatar?v=1"
+                    }
+                ]
+            }
+        },
+        "bookmarked": true,
+        "subscribed": true
+    },
+    {
+        "id": 35943717,
+        "status": "active",
+        "created_at": "2024-01-19T07:16:48.459Z",
+        "updated_at": "2024-02-06T07:23:22.429Z",
+        "name": "001/Dhivyadevi",
+        "description": "access",
+        "purpose": "topic",
+        "clients_enabled": false,
+        "last_needle_color": "green",
+        "last_needle_position": null,
+        "previous_needle_position": null,
+        "bookmark_url": "https://3.basecamp.com/5740649/my/bookmarks/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxuYVdRNkx5OWlZek12UW5WamEyVjBMek0xT1RRek56RTNQMlY0Y0dseVpYTmZhVzRHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6InJlYWRhYmxlIn19--642c40df8e4772132bd4b1f841e9ace9b171924a.json",
+        "url": "https://3.basecamp.com/5740649/projects/35943717.json",
+        "app_url": "https://3.basecamp.com/5740649/projects/35943717",
+        "dock": [
+            {
+                "id": 6953977946,
+                "title": "Message Board",
+                "name": "message_board",
+                "enabled": true,
+                "position": 1,
+                "url": "https://3.basecamp.com/5740649/buckets/35943717/message_boards/6953977946.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943717/message_boards/6953977946"
+            },
+            {
+                "id": 6953977951,
+                "title": "To-dos",
+                "name": "todoset",
+                "enabled": true,
+                "position": 2,
+                "url": "https://3.basecamp.com/5740649/buckets/35943717/todosets/6953977951.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943717/todosets/6953977951"
+            },
+            {
+                "id": 6953977954,
+                "title": "Docs \u0026 Files",
+                "name": "vault",
+                "enabled": true,
+                "position": 3,
+                "url": "https://3.basecamp.com/5740649/buckets/35943717/vaults/6953977954.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943717/vaults/6953977954"
+            },
+            {
+                "id": 6953977956,
+                "title": "Chat",
+                "name": "chat",
+                "enabled": true,
+                "position": 4,
+                "url": "https://3.basecamp.com/5740649/buckets/35943717/chats/6953977956.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943717/chats/6953977956"
+            },
+            {
+                "id": 6953977958,
+                "title": "Schedule",
+                "name": "schedule",
+                "enabled": true,
+                "position": 5,
+                "url": "https://3.basecamp.com/5740649/buckets/35943717/schedules/6953977958.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943717/schedules/6953977958"
+            },
+            {
+                "id": 6953977959,
+                "title": "Automatic Check-ins",
+                "name": "questionnaire",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35943717/questionnaires/6953977959.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943717/questionnaires/6953977959"
+            },
+            {
+                "id": 6953977961,
+                "title": "Email Forwards",
+                "name": "inbox",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35943717/inboxes/6953977961.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943717/inboxes/6953977961"
+            },
+            {
+                "id": 6953977962,
+                "title": "Card Table",
+                "name": "kanban_board",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35943717/card_tables/6953977962.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943717/card_tables/6953977962"
+            }
+        ],
+        "archived": false,
+        "trashed": false,
+        "playgrounded": false,
+        "edit_tools_app_url": "https://3.basecamp.com/5740649/buckets/35943717/dock/edit",
+        "active_status_app_url": "https://3.basecamp.com/5740649/projects/35943717/status/active",
+        "trashed_status_app_url": "https://3.basecamp.com/5740649/projects/35943717/status/trashed",
+        "people": {
+            "team": {
+                "count": 1,
+                "sample": [
+                    {
+                        "id": 45319345,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBLGEswI=--9fd23ab5b6f951f153ddfe5ac0fd68e323554842/avatar?v=1"
+                    }
+                ]
+            }
+        },
+        "bookmarked": true,
+        "subscribed": true
+    },
+    {
+        "id": 35943175,
+        "status": "active",
+        "created_at": "2024-01-19T05:38:49.335Z",
+        "updated_at": "2024-02-06T07:49:26.492Z",
+        "name": "002/Muthu",
+        "description": "testing",
+        "purpose": "topic",
+        "clients_enabled": false,
+        "last_needle_color": "green",
+        "last_needle_position": null,
+        "previous_needle_position": null,
+        "bookmark_url": "https://3.basecamp.com/5740649/my/bookmarks/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxuYVdRNkx5OWlZek12UW5WamEyVjBMek0xT1RRek1UYzFQMlY0Y0dseVpYTmZhVzRHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6InJlYWRhYmxlIn19--b36b46784a863f81cf08f3f7b687d40d31b75c95.json",
+        "url": "https://3.basecamp.com/5740649/projects/35943175.json",
+        "app_url": "https://3.basecamp.com/5740649/projects/35943175",
+        "dock": [
+            {
+                "id": 6953826223,
+                "title": "Message Board",
+                "name": "message_board",
+                "enabled": true,
+                "position": 1,
+                "url": "https://3.basecamp.com/5740649/buckets/35943175/message_boards/6953826223.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943175/message_boards/6953826223"
+            },
+            {
+                "id": 6953826225,
+                "title": "To-dos",
+                "name": "todoset",
+                "enabled": true,
+                "position": 2,
+                "url": "https://3.basecamp.com/5740649/buckets/35943175/todosets/6953826225.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943175/todosets/6953826225"
+            },
+            {
+                "id": 6953826227,
+                "title": "Docs \u0026 Files",
+                "name": "vault",
+                "enabled": true,
+                "position": 3,
+                "url": "https://3.basecamp.com/5740649/buckets/35943175/vaults/6953826227.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943175/vaults/6953826227"
+            },
+            {
+                "id": 6953826228,
+                "title": "Chat",
+                "name": "chat",
+                "enabled": true,
+                "position": 4,
+                "url": "https://3.basecamp.com/5740649/buckets/35943175/chats/6953826228.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943175/chats/6953826228"
+            },
+            {
+                "id": 6953826229,
+                "title": "Schedule",
+                "name": "schedule",
+                "enabled": true,
+                "position": 5,
+                "url": "https://3.basecamp.com/5740649/buckets/35943175/schedules/6953826229.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943175/schedules/6953826229"
+            },
+            {
+                "id": 6953826230,
+                "title": "Automatic Check-ins",
+                "name": "questionnaire",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35943175/questionnaires/6953826230.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943175/questionnaires/6953826230"
+            },
+            {
+                "id": 6953826231,
+                "title": "Email Forwards",
+                "name": "inbox",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35943175/inboxes/6953826231.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943175/inboxes/6953826231"
+            },
+            {
+                "id": 6953826232,
+                "title": "Card Table",
+                "name": "kanban_board",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35943175/card_tables/6953826232.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943175/card_tables/6953826232"
+            }
+        ],
+        "archived": false,
+        "trashed": false,
+        "playgrounded": false,
+        "edit_tools_app_url": "https://3.basecamp.com/5740649/buckets/35943175/dock/edit",
+        "active_status_app_url": "https://3.basecamp.com/5740649/projects/35943175/status/active",
+        "trashed_status_app_url": "https://3.basecamp.com/5740649/projects/35943175/status/trashed",
+        "people": {
+            "team": {
+                "count": 2,
+                "sample": [
+                    {
+                        "id": 45319358,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBL6EswI=--1b38c7ef1698f4059c6b2e4e02591f885df63ba2/avatar?v=1"
+                    },
+                    {
+                        "id": 45319345,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBLGEswI=--9fd23ab5b6f951f153ddfe5ac0fd68e323554842/avatar?v=1"
+                    }
+                ]
+            }
+        },
+        "bookmarked": true,
+        "subscribed": true
+    },
+    {
+        "id": 35943059,
+        "status": "active",
+        "created_at": "2024-01-19T05:12:11.738Z",
+        "updated_at": "2024-02-06T10:47:49.693Z",
+        "name": "001/Muthulakshmi",
+        "description": "testing",
+        "purpose": "topic",
+        "clients_enabled": false,
+        "last_needle_color": "green",
+        "last_needle_position": null,
+        "previous_needle_position": null,
+        "bookmark_url": "https://3.basecamp.com/5740649/my/bookmarks/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxuYVdRNkx5OWlZek12UW5WamEyVjBMek0xT1RRek1EVTVQMlY0Y0dseVpYTmZhVzRHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6InJlYWRhYmxlIn19--78dbf076c464846ee8a81157eecf210b914b3b5a.json",
+        "url": "https://3.basecamp.com/5740649/projects/35943059.json",
+        "app_url": "https://3.basecamp.com/5740649/projects/35943059",
+        "dock": [
+            {
+                "id": 6953766879,
+                "title": "Message Board",
+                "name": "message_board",
+                "enabled": true,
+                "position": 1,
+                "url": "https://3.basecamp.com/5740649/buckets/35943059/message_boards/6953766879.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943059/message_boards/6953766879"
+            },
+            {
+                "id": 6953766882,
+                "title": "To-dos",
+                "name": "todoset",
+                "enabled": true,
+                "position": 2,
+                "url": "https://3.basecamp.com/5740649/buckets/35943059/todosets/6953766882.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943059/todosets/6953766882"
+            },
+            {
+                "id": 6953766883,
+                "title": "Docs \u0026 Files",
+                "name": "vault",
+                "enabled": true,
+                "position": 3,
+                "url": "https://3.basecamp.com/5740649/buckets/35943059/vaults/6953766883.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943059/vaults/6953766883"
+            },
+            {
+                "id": 6953766884,
+                "title": "Chat",
+                "name": "chat",
+                "enabled": true,
+                "position": 4,
+                "url": "https://3.basecamp.com/5740649/buckets/35943059/chats/6953766884.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943059/chats/6953766884"
+            },
+            {
+                "id": 6953766885,
+                "title": "Schedule",
+                "name": "schedule",
+                "enabled": true,
+                "position": 5,
+                "url": "https://3.basecamp.com/5740649/buckets/35943059/schedules/6953766885.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943059/schedules/6953766885"
+            },
+            {
+                "id": 6953766887,
+                "title": "Automatic Check-ins",
+                "name": "questionnaire",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35943059/questionnaires/6953766887.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943059/questionnaires/6953766887"
+            },
+            {
+                "id": 6953766888,
+                "title": "Email Forwards",
+                "name": "inbox",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35943059/inboxes/6953766888.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943059/inboxes/6953766888"
+            },
+            {
+                "id": 6953766889,
+                "title": "Card Table",
+                "name": "kanban_board",
+                "enabled": true,
+                "position": 6,
+                "url": "https://3.basecamp.com/5740649/buckets/35943059/card_tables/6953766889.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943059/card_tables/6953766889"
+            }
+        ],
+        "archived": false,
+        "trashed": false,
+        "playgrounded": false,
+        "edit_tools_app_url": "https://3.basecamp.com/5740649/buckets/35943059/dock/edit",
+        "active_status_app_url": "https://3.basecamp.com/5740649/projects/35943059/status/active",
+        "trashed_status_app_url": "https://3.basecamp.com/5740649/projects/35943059/status/trashed",
+        "people": {
+            "team": {
+                "count": 2,
+                "sample": [
+                    {
+                        "id": 45319358,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBL6EswI=--1b38c7ef1698f4059c6b2e4e02591f885df63ba2/avatar?v=1"
+                    },
+                    {
+                        "id": 45319345,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBLGEswI=--9fd23ab5b6f951f153ddfe5ac0fd68e323554842/avatar?v=1"
+                    }
+                ]
+            }
+        },
+        "bookmarked": true,
+        "subscribed": true
+    },
+    {
+        "id": 35943055,
+        "status": "playgrounded",
+        "created_at": "2024-01-19T05:11:28.420Z",
+        "updated_at": "2024-02-02T12:04:15.503Z",
+        "name": "Making a Podcast",
+        "description": "👋 This is a sample project to showcase how we use Basecamp to make a podcast called REWORK. Take a look around and explore!",
+        "purpose": "topic",
+        "clients_enabled": false,
+        "last_needle_color": "green",
+        "last_needle_position": null,
+        "previous_needle_position": null,
+        "bookmark_url": "https://3.basecamp.com/5740649/my/bookmarks/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxuYVdRNkx5OWlZek12UW5WamEyVjBMek0xT1RRek1EVTFQMlY0Y0dseVpYTmZhVzRHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6InJlYWRhYmxlIn19--b2cdd37fe155c43a948fbdc8f36199f671de9ae5.json",
+        "url": "https://3.basecamp.com/5740649/projects/35943055.json",
+        "app_url": "https://3.basecamp.com/5740649/projects/35943055",
+        "dock": [
+            {
+                "id": 6953766054,
+                "title": "Message Board",
+                "name": "message_board",
+                "enabled": true,
+                "position": 1,
+                "url": "https://3.basecamp.com/5740649/buckets/35943055/message_boards/6953766054.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943055/message_boards/6953766054"
+            },
+            {
+                "id": 6953766055,
+                "title": "To-dos",
+                "name": "todoset",
+                "enabled": true,
+                "position": 2,
+                "url": "https://3.basecamp.com/5740649/buckets/35943055/todosets/6953766055.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943055/todosets/6953766055"
+            },
+            {
+                "id": 6953766056,
+                "title": "Docs \u0026 Files",
+                "name": "vault",
+                "enabled": true,
+                "position": 4,
+                "url": "https://3.basecamp.com/5740649/buckets/35943055/vaults/6953766056.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943055/vaults/6953766056"
+            },
+            {
+                "id": 6953766057,
+                "title": "Chat",
+                "name": "chat",
+                "enabled": true,
+                "position": 5,
+                "url": "https://3.basecamp.com/5740649/buckets/35943055/chats/6953766057.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943055/chats/6953766057"
+            },
+            {
+                "id": 6953766058,
+                "title": "Schedule",
+                "name": "schedule",
+                "enabled": true,
+                "position": 6,
+                "url": "https://3.basecamp.com/5740649/buckets/35943055/schedules/6953766058.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943055/schedules/6953766058"
+            },
+            {
+                "id": 6953766059,
+                "title": "Automatic Check-ins",
+                "name": "questionnaire",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35943055/questionnaires/6953766059.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943055/questionnaires/6953766059"
+            },
+            {
+                "id": 6953766060,
+                "title": "Email Forwards",
+                "name": "inbox",
+                "enabled": false,
+                "position": null,
+                "url": "https://3.basecamp.com/5740649/buckets/35943055/inboxes/6953766060.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943055/inboxes/6953766060"
+            },
+            {
+                "id": 6953766061,
+                "title": "Card Table",
+                "name": "kanban_board",
+                "enabled": true,
+                "position": 3,
+                "url": "https://3.basecamp.com/5740649/buckets/35943055/card_tables/6953766061.json",
+                "app_url": "https://3.basecamp.com/5740649/buckets/35943055/card_tables/6953766061"
+            }
+        ],
+        "archived": false,
+        "trashed": false,
+        "playgrounded": true,
+        "edit_tools_app_url": "https://3.basecamp.com/5740649/buckets/35943055/dock/edit",
+        "active_status_app_url": "https://3.basecamp.com/5740649/projects/35943055/status/active",
+        "trashed_status_app_url": "https://3.basecamp.com/5740649/projects/35943055/status/trashed",
+        "people": {
+            "team": {
+                "count": 8,
+                "sample": [
+                    {
+                        "id": 45319348,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBLSEswI=--b26fb46c4deba2993f4108ffc94f78a4d98d33a9/avatar?v=1"
+                    },
+                    {
+                        "id": 45319349,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBLWEswI=--2b9d2bc6f606fcf2cd1b06732a62ec8286384907/avatar?v=1"
+                    },
+                    {
+                        "id": 45319350,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBLaEswI=--84ed79c4eaa66e533cdbb34f7aebb45e6278250f/avatar?v=1"
+                    },
+                    {
+                        "id": 45319351,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBLeEswI=--a9379f7f737efb0b397283aa82c40c72c9f9fc14/avatar?v=1"
+                    },
+                    {
+                        "id": 45319352,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBLiEswI=--c818c1274d2b74e0de93e028de5b0c55951e2e17/avatar?v=1"
+                    },
+                    {
+                        "id": 45319353,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBLmEswI=--cf49920554145eacf264aa515ca1c2e0b2e25817/avatar?v=1"
+                    },
+                    {
+                        "id": 45319354,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBLqEswI=--47cc0e47962bb76cae4351732aa965add3a39af1/avatar?v=1"
+                    },
+                    {
+                        "id": 45319347,
+                        "avatar_url": "https://bc3-production-assets-cdn.basecamp-static.com/5740649/people/BAhpBLOEswI=--ffe3153be745c315114783ca7d8d9726b39e8e27/avatar?v=1"
+                    }
+                ]
+            }
+        },
+        "bookmarked": false,
+        "subscribed": true
+    }
+]

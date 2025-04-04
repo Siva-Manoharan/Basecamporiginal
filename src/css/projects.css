@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#dataTable th,
+#dataTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#dataTable th {
+    background-color: #f2f2f2;
+}
+
+#actionButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#logoutButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logoutButton:hover {
+    background-color: #0056b3;
+}
+
+/* #exportExcelButton {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+/* Container to hold buttons side by side */
+#buttonContainer {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Button styles */
+#exportExcelButton,
+#activitylog {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#activitylog{
+    background-color: #270cf2
+}
+
+#loading-indicator {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    }
+    .upload-success-message {
+    color: rgb(9, 9, 9); 
+    padding: 5px; 
+    margin-top: 10px; 
+    width: 90%;
+    }
+
+ul,
+#myUL {
+    list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+    margin: 0;
+    padding: 0;
+}
+
+.caret {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Caret icon for closed nodes */
+.caret::before {
+    content: "\25B8";
+    /* Unicode character for right arrow */
+    margin-right: 5px;
+}
+
+/* Caret icon for open nodes */
+.caret-down::before {
+    transform: rotate(90deg);
+    /* Rotate the arrow for open nodes */
+}
+
+/* Hide nested lists by default */
+.nested {
+    display: none;
+}

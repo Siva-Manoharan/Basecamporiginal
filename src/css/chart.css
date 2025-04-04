@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1{
+  text-align: center;
+  margin-top: 20px;
+}
+
+#projectsButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+
+}
+#loading-indicator {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1000;
+}
+.upload-success-message {
+color: rgb(9, 9, 9); 
+padding: 5px; 
+margin-top: 10px; 
+width: 90%;
+}
+#logoutButton {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#logoutButton:hover {
+  background-color: #0056b3;
+}
+
+
+ul, #myUL {
+list-style-type: none;
+}
+
+#myUL {
+margin: 0;
+padding: 0;
+}
+
+.caret {
+cursor: pointer;
+user-select: none; 
+}
+
+.caret::before {
+content: "\25B6";
+color: black;
+display: inline-block;
+margin-right: 6px;
+}
+
+.caret-down::before {
+transform: rotate(90deg);
+}
+
+.nested {
+display: none;
+}
+
+.active {
+display: block;
+}
+#view  {
+
+color: rgb(1, 215, 215);
+}
+#downld{
+color: rgb(3, 111, 44);
+margin-left: 20px;
+}
+#delt{
+
+color: rgb(242, 8, 8);
+margin-left: 20px;
+}
+
+#viewdesign{
+
+width:  12%;
+height: 50px
+}
+.bi-eye-fill{
+width:  30%;
+height: 50px
+}
+
+#exportExcelButton{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; 
+}
