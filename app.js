@@ -873,66 +873,7 @@ async function fetchLogs() {
 //   }
 // });
 
-// app.get('/logs', async (req, res) => {
-//   try {
-//     // If this is an AJAX call for DataTable data
-//     if (req.xhr) {
-//       const { draw, start = 0, length = 10, search } = req.query;
 
-//       // Fetch logs from your database or data source
-//       const logs = await fetchLogs();
-//       console.log("Fetched logs:", logs); // Log fetched logs to see if data is there
-
-//       // Define the phrases to look for
-//       const phrases = ['added', 'changed', 'commented', 'started', 'checked off', 'reposted', 'moved', 'replaced'];
-
-//       // Function to generate displayTitle based on the title
-//       function getDisplayTitle(title) {
-//         let foundPhrase = '';
-//         for (const phrase of phrases) {
-//           const regex = new RegExp(phrase, 'i'); // Case-insensitive match
-//           if (regex.test(title)) {
-//             foundPhrase = phrase;
-//             break; // Stop checking once we find the first matching phrase
-//           }
-//         }
-//         return foundPhrase ? foundPhrase : title;
-//       }
-
-//       // Apply displayTitle to each log
-//       const logsWithDisplayTitle = logs.map(log => ({
-//         ...log,
-//         displayTitle: getDisplayTitle(log.title) // Add the displayTitle property
-//       }));
-
-//       // Apply search filter
-//       let filteredLogs = logsWithDisplayTitle;
-//       if (search?.value) {
-//         filteredLogs = logsWithDisplayTitle.filter(log =>
-//           log.title.toLowerCase().includes(search.value.toLowerCase())
-//         );
-//       }
-
-//       // Apply pagination
-//       const paginatedLogs = filteredLogs.slice(start, parseInt(start, 10) + parseInt(length, 10));
-//       console.log(paginatedLogs.length);
-
-//       // Send JSON response for DataTable
-//       return res.json({
-//         draw: parseInt(draw, 10),
-//         recordsTotal: logs.length, // Total records without filtering
-//         recordsFiltered: filteredLogs.length, // Filtered records (after applying search)
-//         data: paginatedLogs, // Paginated data for the current page
-//       });
-//     }
-
-//     // If this is a page render request
-//     res.render('logs'); // Render logs page
-//   } catch (error) {
-//     console.error('Error fetching logs:', error.message);
-//     res.status(500).send('Error fetching logs');
-//   }
-// });
 
 // app.get('/logs', async (req, res) => {
 //   try {
